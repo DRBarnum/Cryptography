@@ -21,6 +21,10 @@ while Coding:
         Coding=False
     elif start == "e":
         encryption=input("Mesage: ")
+        for c in encryption:
+            n=(associations.find(c))
+            r=int(n)
+            print(sum(r))
         key=input("Key: ")
     elif start == "d":
         decryption=input("Message: ")
@@ -29,3 +33,5 @@ while Coding:
         print("Did not understand command, try again.")
 
 
+
+    
