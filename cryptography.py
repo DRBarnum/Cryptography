@@ -1,7 +1,7 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Robbie
+Credit: Mathew
 
 Assignment:
 
@@ -11,13 +11,21 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
-start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-if start == "e":
-    m=input("Message: ")
-elif start =="d":
-    m=input("Mesage: ")
-elif start=="q":
-    print("Goodbye")
-else:
-    print("Did not understand command, try again.")
+
+Coding=True
+while Coding:
+    start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    if start == "q":
+        print("Goodbye")
+        Coding=False
+    elif start == "e":
+        encryption=input("Mesage: ")
+        key=input("Key: ")
+    elif start == "d":
+        decryption=input("Message: ")
+        key=input("Key: ")
+    else:
+        print("Did not understand command, try again.")
+
+
