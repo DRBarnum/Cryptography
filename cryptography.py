@@ -22,10 +22,16 @@ while Coding:
     elif start == "e":
         encryption=input("Mesage: ")
         for c in encryption:
-            n=(associations.find(c))
-            r=int(n)
-            print(sum(r))
+            n=str(associations.find(c))
+            print(n)
+            a=list(n)
         key=input("Key: ")
+        for c in key:
+            m=str(associations.find(c))
+            print(m)
+            b=list(m)
+        for l in c:
+            print(int(a[l]+b[l]))
     elif start == "d":
         decryption=input("Message: ")
         key=input("Key: ")
