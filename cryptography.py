@@ -31,7 +31,7 @@ while Coding:
             m=(associations.find(c))
             print(m) # Prints Key Numbers DELETE THIS
             b.append(m)
-        p=b*10
+        p=b*10 # THIS DOES NOT ACTUALLY WORK! MATT IF YOU SEE THIS TELL ME TO SHOW YOU SOMETHING!
         for l in range(len(encryption)):
             q=a[l]+p[l]
             f.append(q)
