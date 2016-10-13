@@ -31,9 +31,11 @@ while Coding:
             m=(associations.find(c))
             print(m) # Prints Key Numbers DELETE THIS
             b.append(m)
-        p=b*10 # THIS DOES NOT ACTUALLY WORK! MATT IF YOU SEE THIS TELL ME TO SHOW YOU SOMETHING!
+        p=b*10 
         for l in range(len(encryption)):
             q=a[l]+p[l]
+            if q >= 84:# WORKING ON THIS RIGHT HERE PIECE OF CODE.
+               # FIGURIN' OUT HOW TO LOOP THESE HERE NUMBERS BACK 'ROUN' TO O 
             f.append(q)
         for h in f:
             k=associations[h]
