@@ -14,6 +14,9 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 a=[]
 b=[]
 f=[]
+u=[]
+w=[]
+z=[]
 Coding=True
 while Coding:
     start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -24,26 +27,44 @@ while Coding:
         encryption=input("Mesage: ")
         for c in encryption:
             n=(associations.find(c))
-            print(n) # Prints Message Numbers DELETE THIS
             a.append(n)
         key=input("Key: ")
         for c in key:
             m=(associations.find(c))
-            print(m) # Prints Key Numbers DELETE THIS
             b.append(m)
         p=b*10 
         for l in range(len(encryption)):
             q=a[l]+p[l]
-            if q >= 84:# WORKING ON THIS RIGHT HERE PIECE OF CODE.
-               # FIGURIN' OUT HOW TO LOOP THESE HERE NUMBERS BACK 'ROUN' TO O 
-            f.append(q)
+            if q > 84:
+                j=q-84
+                f.append(j)
+            else:
+                f.append(q)
         for h in f:
             k=associations[h]
             print(k, end="")
         print()
     elif start == "d":
         decryption=input("Message: ")
+        for c in decryption:
+            n=(associations.find(c))
+            w.append(n)
         key=input("Key: ")
+        for c in key:
+            m=(associations.find(c))
+            z.append(m)
+        p=z*10 
+        for l in range(len(decryption)):
+            q=w[l]-p[l]
+            if q < 0:
+                j=q+84
+                u.append(j)
+            else:
+                u.append(q)
+        for h in u:
+            k=associations[h]
+            print(k, end="")
+        print()
     else:
         print("Did not understand command, try again.")
 
