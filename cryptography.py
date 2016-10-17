@@ -31,7 +31,7 @@ while Coding:
         for c in key:
             m=(associations.find(c))
             b.append(m)
-        p=b*10 
+        p=b*100
         for l in range(len(encryption)):
             q=a[l]+p[l]
             if q >= 85:
@@ -55,7 +55,7 @@ while Coding:
         for c in key:
             m=(associations.find(c))
             z.append(m)
-        p=z*10 
+        p=z*100 
         for l in range(len(decryption)):
             q=w[l]-p[l]
             if q < 0:
