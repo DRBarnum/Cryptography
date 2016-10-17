@@ -16,7 +16,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 Coding=True
 while Coding:
     start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
-    if start = "q":
+    if start == "q":
         print("Goodbye")
         Coding=False
     elif start == "e":
@@ -58,7 +58,7 @@ while Coding:
         p=z*10 
         for l in range(len(decryption)):
             q=w[l]-p[l]
-            if q <= 0:
+            if q < 0:
                 j=q+84
                 u.append(j)
             else:
