@@ -23,7 +23,7 @@ while Coding:
         a=[]
         b=[]
         f=[]
-        encryption=input("Mesage: ")
+        encryption=input("Message: ")
         for c in encryption:
             n=(associations.find(c))
             a.append(n)
