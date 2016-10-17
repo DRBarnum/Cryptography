@@ -34,8 +34,8 @@ while Coding:
         p=b*10 
         for l in range(len(encryption)):
             q=a[l]+p[l]
-            if q >= 84:
-                j=q-84
+            if q >= 85:
+                j=q-85
                 f.append(j)
             else:
                 f.append(q)
@@ -59,7 +59,7 @@ while Coding:
         for l in range(len(decryption)):
             q=w[l]-p[l]
             if q < 0:
-                j=q+84
+                j=q+85
                 u.append(j)
             else:
                 u.append(q)
