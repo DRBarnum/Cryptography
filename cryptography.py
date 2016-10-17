@@ -17,7 +17,7 @@ Coding=True
 while Coding:
     start=input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if start == "q":
-        print("Goodbye")
+        print("Goodbye!")
         Coding=False
     elif start == "e":
         a=[]
